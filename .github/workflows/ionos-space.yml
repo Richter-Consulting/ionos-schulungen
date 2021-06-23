@@ -1,0 +1,40 @@
+name: IONOS.space
+
+on: [push]
+
+jobs:
+  ionos-space:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Ionos Project data
+        uses: ionos-deploy-now/retrieve-project-info-action@v1
+        id: project
+        with:
+          api-key: ${{ secrets.IONOS_API_KEY }}
+          project: f4b4d6dc-d2d7-4571-b372-7ac2e6883147
+          service-host: api-eu.ionos.space
+      - name: checkout
+        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
+        uses: actions/checkout@v2
+        with:
+          submodules: 'recursive'
+      - name: Setup Hugo
+        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
+        uses: peaceiris/actions-hugo@v2
+        with:
+          extended: true
+          hugo-version: '0.74.3'
+      - name: Build Hugo project
+        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
+        run: hugo --gc --minify -b ${{ steps.project.outputs.site-url }}
+      - name: Deploy to IONOS
+        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
+        uses: ionos-deploy-now/deploy-to-ionos-action@v1
+        with:
+          dist-folder: public
+          project: f4b4d6dc-d2d7-4571-b372-7ac2e6883147
+          storage-quota: ${{ steps.project.outputs.storage-quota }}
+          branch-id: ${{ steps.project.outputs.branch-id }}
+          service-host: api-eu.ionos.space
+          api-key: ${{ secrets.IONOS_API_KEY }}
+          remote-host: ${{ steps.project.outputs.remote-host }}

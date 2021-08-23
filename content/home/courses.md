@@ -9,12 +9,12 @@ content:
   filter_default: 0
 
   filter_button:
-    - name: All Courses
+    - name: Alle Kurse
       tag: '*'
-    - name: Data Visualization
-      tag: Data Visualization
-    - name: Statistics
-      tag: Statistics
+    - name: Entwicklung
+      tag: Development
+    - name: macOS
+      tag: macOS
 design:
   columns: '1'
   view: 3

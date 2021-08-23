@@ -4,6 +4,7 @@ headless: true
 weight: 20
 title: Features
 subtitle: ✨ Teach _anything_ with
+draft: true
 feature:
   - icon: chalkboard-teacher
     icon_pack: fas

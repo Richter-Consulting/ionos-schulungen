@@ -20,7 +20,7 @@ twitter: ''
 
 # Contact (edit or remove options as required)
 
-email: test@example.org
+email: webmaster@webducer.de
 appointment_url: 'https://calendly.com'
 contact_links:
   - icon: comments
@@ -42,13 +42,13 @@ main_menu:
 # Localization
 
 date_format: 'Jan 2, 2006'
-time_format: '3:04 PM'
+time_format: '15:04'
 address_format: en-us
 
 # Site features
 
-highlight: false
-highlight_languages: []
+highlight: true
+highlight_languages: [csharp]
 math: false
 diagram: false
 privacy_pack: false

@@ -16,7 +16,7 @@ main:
     weight: 10
     parent: courses
   - name: Blog
-    url: '/post'
+    url: 'https://blog.eugen.page'
     weight: 30
   - name: Kontakt
     url: '/contact'

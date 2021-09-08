@@ -16,7 +16,7 @@ abstract:
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2021-10-11T19:00:11+01:00
+date: 2021-11-10T19:00:11+01:00
 date_end: #2021-11-24T21:00:00+01:00
 all_day: false
 
@@ -62,7 +62,7 @@ url_video:
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides: ""
+slides: "git"
 
 # Projects (optional).
 #   Associate this post with one or more of your projects.
@@ -76,3 +76,10 @@ Arbeiten Sie in einer Gruppe an einem Dokument oder programmieren Sie gerne? Wol
 Lernen Sie, wie eine Version (von einem oder mehreren Dokumenten) mit Git auf dem Rechner gesichert, verglichen, mit anderen geteilt, zusammengeführt und wiederhergestellt werden kann. Erstellen Sie mehrere Bearbeitungszweige, um an mehreren Dokumentversionen parallel arbeiten zu können.
 
 Kursinhalt: Grundlagen Versionierung; Geschichte; aktuelle Systeme; Strategien; lokaler Einsatz von Git; Git mit Server-Einsatz; Arbeiten an mehreren Zweigen.
+
+## Nächster Termin an der MVHS
+
+- 3x, 10.11.2021 - 24.11.2021
+  1. Mi. 10.11.2021 , 19:00 – 21:00 Uhr
+  2. Mi. 17.11.2021 , 19:00 – 21:00 Uhr
+  3. Mi. 24.11.2021 , 19:00 – 21:00 Uhr

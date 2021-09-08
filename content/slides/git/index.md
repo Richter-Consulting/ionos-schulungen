@@ -76,11 +76,11 @@ slides:
 ## Geschichte von git
 
 - 2005 von Linus Torwalds initialisiert 
-- Erste Version in wenigen Tagen 
-- Zur Verwaltung von Linux Kernel (sehr verteilte Entwicklung) 
-- Sehr hohe Effizienz 
-- Sehr hohe Sicherheit 
-- Wegwerf-Zweige
+- {{< fragment >}}Erste Version in wenigen Tagen{{< /fragment >}}
+- {{< fragment >}}Zur Verwaltung von Linux Kernel (sehr verteilte Entwicklung){{< /fragment >}}
+- {{< fragment >}}Sehr hohe Effizienz{{< /fragment >}}
+- {{< fragment >}}Sehr hohe Sicherheit{{< /fragment >}}
+- {{< fragment >}}Wegwerf-Zweige{{< /fragment >}}
 
 {{< speaker_note >}}
 - Nach dem Lizenzänderung von BitKeeper (keine kostenlose Lizenzen für OpenSource Projekte)
@@ -98,13 +98,36 @@ slides:
 ---
 
 ## Versionsstrategien
+
 ### Lineare Entwicklung
 
-![Linear git history](git_linear.png)
+![Git nur mit main Branch](git_main.png)
+
+<!--
+const graphContainer = document.getElementById("graph-container");
+ 
+// Instantiate the graph.
+const gitgraph = GitgraphJS.createGitgraph(graphContainer, {
+  orientation: "horizontal",
+  mode: null,
+  author: "ER <er@git.de>"
+});
+
+// Simulate git commands with Gitgraph API.
+const main = gitgraph.branch("main");
+main.commit("Init")
+  .commit("First Chapter")
+  .commit("Day one")
+  .tag("v0.1")
+  .commit("Day two")
+  .commit("Day three")
+  .commit("Day four")
+  .tag("v0.2");
+-->
 
 ---
 
-## Ein Branch - Pro
+#### Ein Branch - Pro
 
 - Sehr einfache Benutzung
 - Kein Merge zwischen unterschiedlichen Zweigen notwendig
@@ -113,7 +136,48 @@ slides:
 
 ---
 
-## Ein Branch - Contra
+#### Ein Branch - Contra
 
 - Schwer zu handhaben, wenn mehr als nur ein Entwickler beteilig ist, da während des Release-Tests keine Weiterentwicklung für nächste Version möglich ist.
 - Hotfixes einer Version sind sehr schwer zu realisieren, da eventuell bereits unvollständige Features für neue Version da sind.
+
+---
+
+## Main - Develop
+
+### Stabliler und Entwicklungszweig
+
+![Git mit main und develop Branches](git_main_develop.png)
+
+<!--
+const graphContainer = document.getElementById("graph-container");
+ 
+// Instantiate the graph.
+const gitgraph = GitgraphJS.createGitgraph(graphContainer, {
+  orientation: "horizontal",
+//  mode: "compact",
+  author: "ER <er@git.de>"
+});
+
+// Simulate git commands with Gitgraph API.
+const main = gitgraph.branch("main");
+main.commit("Init");
+
+const develop = gitgraph.branch("develop");
+
+develop.commit("First Chapter")
+  .commit("Day one")
+  .commit("Day two");
+main.merge(develop);
+main.tag("v0.1");
+
+develop.commit("Day three")
+  .commit("Day four");
+
+main.merge(develop)
+  .tag("v0.2");
+
+develop.commit("Day five");
+-->
+
+---

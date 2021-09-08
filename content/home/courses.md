@@ -11,8 +11,8 @@ content:
   filter_button:
     - name: Alle Kurse
       tag: '*'
-    - name: Entwicklung
-      tag: Development
+    - name: MVHS
+      tag: MVHS
     - name: macOS
       tag: macOS
 design:

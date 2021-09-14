@@ -1,5 +1,5 @@
 ---
-title: 📚 Courses
+title: 📚 Kurse
 type: page
 
 header:
@@ -7,4 +7,4 @@ header:
   image: ""
 ---
 
-Explore our courses below and expand your knowledge!
+Sehen Sie meine Kurse an und erweitern Sie Ihr Wissen!

@@ -305,3 +305,7 @@ develop.merge(f3);
 
 - Wie Forking, der Entwickler kann aber eine Änderung dem Original-Repository aktiv vorschlagen.
 {{< /speaker_note >}}
+
+---
+
+# Workshop

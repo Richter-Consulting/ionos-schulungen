@@ -111,6 +111,7 @@ marketing:
   google_site_verification: ''
   baidu_site_verification: ''
   baidu_tongji: ''
+  matomo_analytics: true
 cms:
   local_backend: false
 icon:

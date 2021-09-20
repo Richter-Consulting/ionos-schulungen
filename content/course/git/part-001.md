@@ -9,7 +9,7 @@ tags:
 weight: 20
 ---
 
-> Als ein Repository unter **git** wird ein Ordner bezeichnet, der unter Versionskontrolle von git steht.
+> Als ein **Repository** bei **git** wird ein Ordner bezeichnet, der unter Versionskontrolle von git steht.
 
 ## Ordner anlegen
 
@@ -65,3 +65,33 @@ Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
 d--h-          15.09.2021    08:12                .git
 ```
+
+Dabei wird das Verzeichnis unter Versionskontrolle gestellt. Das ist an dem versteckten Ordner `.git` gut zu sehen. In diesem werden alle Informationen zu den Versionen gespeichert.
+
+## Prüfen des Repository Zustandes
+
+Den aktuellen Zustand des Ordners, aus Sicht von git, können wir mit dem Befehl `status` abrufen. Dieser zeigt, ob neue Dateien zu der Versionsverwaltung hinzugefügt werden können, ob geänderte Dateien vorliegen usw.
+
+```bash
+# Linux / macOS
+repo_1$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+repo_1$
+```
+
+```powershell
+# Windows
+repo_1> git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+repo_1>
+```
+
+Bei einem neu angelegten Repository ist der Status natürlich sehr sauber. Es sind ja noch keine Dateien versioniert und es liegen auch noch keine zum Versionieren vor.

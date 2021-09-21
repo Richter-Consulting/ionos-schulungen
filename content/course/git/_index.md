@@ -13,19 +13,21 @@ weight: 10
 - Präsentation (Download)
 - [Nächster Kurs](event/git-2021-2)
 
+> _Die Code-Beispiele werden für Linus/macOS in Bash und unter Windows in PowerShel (Core) abgebildet. Sind die erforderlichen Befehle gleich, werden diese nur in Bash angezeigt. Diese können 1:1 in PowerShell eingegeben werden._
+
 ## Installation von Git
 
 Ob git bereits auf Ihrem System installiert ist, können Sie mit folgenden befehl in der Commandozeile / Terminal / Bash ausprobieren:
 
 ```bash
 # Linux / macOS
-$ git --version
+kurse$ git --version
 git version 2.33.0 
 ```
 
-```pwsh
+```powershell
 # Windows
-> git --version
+PS kurse> git --version
 git version 2.33.0.windows.2
 ```
 

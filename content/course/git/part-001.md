@@ -9,7 +9,9 @@ tags:
 weight: 20
 ---
 
-> Als ein **Repository** bei **git** wird ein Ordner bezeichnet, der unter Versionskontrolle von git steht.
+{{< callout note >}}
+Als ein **Repository** bei **git** wird ein Ordner bezeichnet, der unter Versionskontrolle von git steht.
+{{< /callout >}}
 
 ## Ordner anlegen
 
@@ -19,23 +21,22 @@ Wechseln Sie in den neu erzeugten Ordner.
 
 ```bash
 # Linux / macOS
-$ mkdir repo_1
-$ ls -la
+src$ mkdir repo_1
+src$ ls -la
 repo_1
-$ cd repo_1
+src$ cd repo_1
 ```
 
-```pwsh
+```powershell
 # Windows (Power Shell Core)
-> mkdir repo_1
+PS src> New-Item repo_1 -Type Directory
 
     Directory: C:\Users\kurse\src
 
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
 d----          15.09.2021    08:05                repo_1
-> cd repo_1
-> 
+PS src> cd repo_1
 ```
 
 ## Repository initialisieren
@@ -44,20 +45,20 @@ Nun initialisieren wir ein git Repository mit dem `init` Befehl von git.
 
 ```bash
 # Linux / macOS
-$ git init
+repo_1$ git init
 Initialized empty Git repository in /Users/kurse/src/repo_1/.git/
 $ ls -la
 total 0
-drwxrwxrwx 1 eugen eugen 4096 Sep 15 08:10 .
-drwxrwxrwx 1 eugen eugen 4096 Sep 15 08:05 ..
-drwxrwxrwx 1 eugen eugen 4096 Sep 15 08:10 .git
+drwxrwxrwx 1 kurse kurse 4096 Sep 15 08:10 .
+drwxrwxrwx 1 kurse kurse 4096 Sep 15 08:05 ..
+drwxrwxrwx 1 kurse kurse 4096 Sep 15 08:10 .git
 ```
 
-```pwsh
+```powershell
 # Windows (Power Shell Core)
-> git init
+PS repo_1> git init
 Initialized empty Git repository in C:/Users/kurse/src/repo_1/.git/
-> Get-ChildItem . -Force
+PS repo_1> Get-ChildItem . -Force
 
     Directory: C:\Users\kurse\src\repo_1
 
@@ -80,18 +81,16 @@ On branch master
 No commits yet
 
 nothing to commit (create/copy files and use "git add" to track)
-repo_1$
 ```
 
 ```powershell
 # Windows
-repo_1> git status
+PS repo_1> git status
 On branch master
 
 No commits yet
 
 nothing to commit (create/copy files and use "git add" to track)
-repo_1>
 ```
 
 Bei einem neu angelegten Repository ist der Status natürlich sehr sauber. Es sind ja noch keine Dateien versioniert und es liegen auch noch keine zum Versionieren vor.

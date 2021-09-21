@@ -18,6 +18,6 @@ main:
   - name: Blog
     url: 'https://blog.eugen.page'
     weight: 30
-  - name: Kontakt
-    url: '/contact'
-    weight: 60
+ # - name: Kontakt
+ #   url: '/contact'
+ #   weight: 60

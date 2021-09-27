@@ -1,5 +1,5 @@
 ---
-title: "Initialisierung eines lokalen Repositories"
+title: "Initialisierung eines lokalen Repositorys"
 linkTitle: Repository anlegen
 type: book
 date: '2021-09-13'
@@ -15,7 +15,7 @@ Als ein **Repository** bei **git** wird ein Ordner bezeichnet, der unter Version
 
 ## Ordner anlegen
 
-Als erstes legen wir einen Ordner an, den wir gleich unter die Versionsverwaltung stellen wollen. Aktuell werden wir es mit einen leerern ordner tun, das gleiche lässt sich aber auch mit einen vorhandenen Ordner erledigen, wenn Sie desen Inhalt versionieren wollen.
+Als erstes legen wir einen Ordner an, den wir gleich unter die Versionsverwaltung stellen wollen. Aktuell werden wir es mit einem leeren Ordner tun, das Gleiche lässt sich aber auch mit einem vorhandenen Ordner erledigen, wenn Sie desen Inhalt versionieren wollen.
 
 Wechseln Sie in den neu erzeugten Ordner.
 
@@ -69,7 +69,7 @@ d--h-          15.09.2021    08:12                .git
 
 Dabei wird das Verzeichnis unter Versionskontrolle gestellt. Das ist an dem versteckten Ordner `.git` gut zu sehen. In diesem werden alle Informationen zu den Versionen gespeichert.
 
-## Prüfen des Repository Zustandes
+## Prüfen des aktuellen Zustandes von Repository
 
 Den aktuellen Zustand des Ordners, aus Sicht von git, können wir mit dem Befehl `status` abrufen. Dieser zeigt, ob neue Dateien zu der Versionsverwaltung hinzugefügt werden können, ob geänderte Dateien vorliegen usw.
 

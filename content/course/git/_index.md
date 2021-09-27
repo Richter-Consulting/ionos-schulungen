@@ -17,7 +17,7 @@ weight: 10
 
 ## Installation von Git
 
-Ob git bereits auf Ihrem System installiert ist, können Sie mit folgenden befehl in der Commandozeile / Terminal / Bash ausprobieren:
+Ob git bereits auf Ihrem System installiert ist, können Sie mit folgenden Befehl in der Commandozeile / Terminal / Bash ausprobieren:
 
 ```bash
 # Linux / macOS

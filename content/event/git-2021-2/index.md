@@ -49,6 +49,10 @@ links:
   url: https://www.mvhs.de/programm/it-digitales.19596/N486680
   icon_pack: fas
   icon: book-open
+- name: Kurs Unterlagen
+  url: /course/git
+  icon_pack: fas
+  icon: book
 
 # Optional filename of your slides within your event's folder or a URL.
 url_slides:

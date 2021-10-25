@@ -19,4 +19,5 @@ design:
   columns: '1'
   view: 3
   flip_alt_rows: false
+draft: true
 ---

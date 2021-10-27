@@ -38,3 +38,28 @@ Mit den Parametern `--oneline --decorate` wird die Ausgabe noch kürzer. Dabei w
 repo_1$ git log --oneline --decorate
 221df61 (HEAD -> master) feat: Start des ersten Kapitels
 ```
+
+### Aliases
+
+Da man die langen Befehle mit vielen Parametern nicht jedes Mal aus dem Gedächtnis herauskramen will, bietet git die Möglichkeit, diese mit einem Alias (alternativen Namen) zu versehen. Wir vergeben für unsere Log-Anzeige ein Alias `pl` (für pritty log).
+
+```bash
+# Linux / macOS
+repo_1$ git config --global alias.pl 'log --graph --oneline --decorate --all'
+```
+
+Das Alias wir dabei in der globalen (`--global`) Konfiguration von git gespeichert.
+
+- `log`: git Befehl, in unserem Fall log
+- `--graph`: Darstelluing des Logs als Graph (dazu später mehr, wenn wir mehr als ein branch haben)
+- `--oneline`: Einzeilige Darstelluing
+- `--decorate`: _Hübsche_ Darstellung der Zeile
+- `--all`: Alle Branches anzeigen, nicht nur das aktuelle (später mehr dazu)
+
+Nun können wir mit dem einfachen `git pl` das Log mit vielen Parametern einfach aufrufen.
+
+```bash
+# Linux / macOS
+repo_1$ git pl
+* 221df61 (HEAD -> master) feat: Start des ersten Kapitels
+```

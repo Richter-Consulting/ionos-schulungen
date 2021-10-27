@@ -63,10 +63,10 @@ Nun besagt die Meldung, dass wir Änderungen haben, die auf ein Commit warten.
 ### Änderungen festschreiben
 
 {{< callout note >}}
-**Commit** bei git ist eine Aktion, mit der aktuelle Stand als Version gespeichert wird. Zu einem Commit müssen die betroffenen Dateien vorgemerkt werden. Dieses Vormerken wird auch **Staging** genannt.
+**Commit** bei git ist eine Aktion, mit der der aktuelle Stand als Version gespeichert wird. Zu einem Commit müssen die betroffenen Dateien vorgemerkt werden. Dieses Vormerken wird auch **Staging** genannt.
 {{< /callout >}}
 
-Nun schreiben wir die Version mit einen `commit` endgültig fest. Dabei ist es bei git auch immer notwendig eine Nachricht mitzugeben (Parameter `-m`), die die aktuelle Version beschreibt. Eine gute Dokumentation, wie ein Commit-Nachricht aussehen könnte, finden Sie unter [Konventionelle Commits](https://www.conventionalcommits.org/de/v1.0.0/).
+Nun schreiben wir die Version mit einen `commit` endgültig fest. Dabei ist es bei git auch immer notwendig eine Nachricht mitzugeben (Parameter `-m`), die die aktuelle Version beschreibt. Eine gute Dokumentation, wie eine Commit-Nachricht aussehen könnte, finden Sie unter [Konventionelle Commits](https://www.conventionalcommits.org/de/v1.0.0/).
 
 Wird die Nachricht (Message) nicht direkt mit angegeben, startet git automatisch vorkonfigurierten Text-Editor, um die Nachricht in diesem einzugeben. Das ist sehr praktisch, wenn man mehrzeilige Nachrichten an die Version anhängen möchte.
 

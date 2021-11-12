@@ -48,29 +48,37 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 ## Globale Ausnahmen (Betriebssystem)
 
-Git bietet für solche Dateien zwei Orten, in denen die Ausnahmen definiert werden können. Wir können die Ausnahmen global (auf Benutzerebene) definieren, oder pro Repository.
+Git bietet für solche Dateien zwei Orte, in denen die Ausnahmen definiert werden können. Wir können die Ausnahmen global (auf Benutzerebene) definieren, oder pro Repository.
 
 Um eine neue Ausnahmedatei für den Benutzer anzulegen, geben Sie folgendes ein:
 
 ```bash
 # Linux / macOS
 repo_1$ git config --global core.excludesfile ~/.gitignore_global
+repo_1$ touch ~/.gitignore_global
 ```
 
 ```powershell
 # Winfows
 repo_1> git config --global core.excludesfile "$env:USERPROFILE\.gitignore_global"
+repo_1> New-Item "$env:USERPROFILE\.gitignore_global"
+
+    Directory: C:\Users\kurs
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          11.11.2021    19:47              0 .gitignore_global
 ```
-Nun kann die betreffende Datei `.gitignore_global` erstellt werden und in dieser die Liste der globalen Ausnahmen gepflegt werden. Fügen Sie in unserem Fall einfach folgendes als erste Zeile in die Datei ein:
+Nun kann in die betreffende Datei `.gitignore_global` die Liste der globalen Ausnahmen gepflegt werden. Fügen Sie in unserem Fall einfach folgendes als erste Zeilen in die Datei ein:
 
 ```
-# Ignore global temporal files
+# Ignore global backup files
 *.bak
 ```
 
 Die Zeilen, die mit `#` Anfangen, werden als Kommentare ausgewertet.
 
-Eine sehr gute Übersicht über übliche Ausnahmen liefert die Seite https://github.com/github/gitignore. Im Verzeichnis `Global` sind dabei die globalen Ausnahmen für unterschiedliche Betriebssysteme (z.B. bei macOS ist es üblich die Datei `.DS_Store` auszufiltern, oder unter Windows `Thumbs.db`).
+Eine sehr gute Übersicht über übliche Ausnahmen liefert die Seite [github.com/github/gitignore](https://github.com/github/gitignore). Im Verzeichnis `Global` sind dabei die globalen Ausnahmen für unterschiedliche Betriebssysteme (z.B. bei macOS ist es üblich die Datei `.DS_Store` auszufiltern, oder unter Windows `Thumbs.db`).
 
 Pro Zeile in der Datei wird eine Ausnahme definiert, die auch Globings (Platzhalter) erlaubt.
 
@@ -78,6 +86,7 @@ Pro Zeile in der Datei wird eine Ausnahme definiert, die auch Globings (Platzhal
 - `**`: Beliebige Unterverzeichnisse
 - `?`: Ein Zeichen
 - `[Aa]`: Regex für kleines/großes A
+- `!abc`: Mit `!` kann die Ausnahme umgekehrt werden (zum Beispiel alles im Ordner `XYZ` nicht versionieren, aber die Datei `abc.md`)
 
 Nach dem Hinzufügen der oberen Ausnahme, können wir wieder mit `git status` unsere Bemühungen überprüfen.
 
@@ -96,3 +105,55 @@ Nun wir die Datei `kapitel_1.bak` nicht mehr angezeigt.
 
 ## Ausnahmen im Repository
 
+Die Ausnahmen für ein konkretes Repository werden in der Datei `.gitignore` definiert. Meistens wird diese Datei in die Versionsverwaltung aufgenommen, da diese Ausnahmen das konkrete Projekt betreffen und für alle Beteiligten relevant sind.
+
+Die Datei `.gitignore` gilt dabei für das aktuelle Verzeichnis und alle Unterverzeichnisse. Unterverzeichnisse können dabei eigene Ausnahmen in eigenen `.gitignore` Dateien definieren, die die Ausnahmen aus den übergeordneten Verzeichnissen ergängzen.
+
+Legen Sie nun die `.gitignore` Datei im Wurzelverzeichnis unseres Repositories.
+
+```bash
+# Linux / macOS
+repo_1$ touch .gitignore
+```
+
+```powershell
+# Windows
+repo_1> New-Item .gitignore
+
+    Directory: C:\Users\kurs\src\repo_1
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          11.11.2021    19:53              0 .gitignore
+```
+
+Fügen Sie in die neue Ausnahmedatei folgende Zeilen, um unsere `.~` Datei von der Versionsverwaltung auszuschließen.
+
+```
+# Exclude temporal files
+*.~
+```
+
+Mit `git status` sehen wir nun, dass auch die `.~` Datei in der Auflistung nicht mehr auftacht, dafür aber unsere neue `.gitignore` Ausnahmedatei. Diese sollen wir versionieren.
+
+```bash
+# Linux / macOS
+repo_1$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+
+```bash
+# Linux / macOS
+repo_1$ git add .gitignore
+repo_1$ git commit -m "Add repo ignore file for temp files"
+[master d8f7b79] Add repo ignore file for temp files
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+```
+
+Auf der bereits erwähnten [GitHub Seite](https://github.com/github/gitignore) finden Sie eine Sammlung von Ausnahmedateien für unterschiedliche Projekte (Programmiersprachen / Tools). Sie müssen damit die Ausnahmelisten nicht sebst erstellen, sondern von dieser Seite die verhandenen als Ausgangsbasis für eigene Projekte nutzen.

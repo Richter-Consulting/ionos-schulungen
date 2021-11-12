@@ -9,9 +9,9 @@ tags:
 weight: 10
 ---
 
-- [Präsentation](slides/git)
+- [Präsentation](/slides/git)
 - Präsentation (Download)
-- [Nächster Kurs](event/git-2021-2)
+- [Nächster Kurs](/event/git-kurs)
 
 > _Die Code-Beispiele werden für Linus/macOS in Bash und unter Windows in PowerShel (Core) abgebildet. Sind die erforderlichen Befehle gleich, werden diese nur in Bash angezeigt. Diese können 1:1 in PowerShell eingegeben werden._
 

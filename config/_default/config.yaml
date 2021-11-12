@@ -36,10 +36,11 @@ enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
 permalinks:
-  event: '/kurs/:slug/'
+  event: '/event/:slug/'
   tags: '/tag/:slug/'
+  course: '/course/:slug/'
   categories: '/category/:slug/'
-  publication_types: '/publication-type/:slug/'
+  publication_types: '/publication_type/:slug/'
 disableAliases: true
 outputs:
   home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]

@@ -274,7 +274,7 @@ develop.merge(f3);
 - Arbeiten im Team ohne Beeinträchtigungen möglich, da Aufgaben in eigenen Zweigen erledigt werden.
 - Saubere Implementierung der Hotfixes für Release-Versionen ohne Beeinträchtigung der Entwicklung möglich.
 - Paralelles Weiterentwicklen der nächsten Version und vorbereiten (testen) der aktuellen durch Release-Zweige möglich.
-- Auslieferung von Hotfixes in sehr kurzer Zeit möglich, da keine Rücksicht auf den Entwicklungsstand genommen werden muss.#
+- Auslieferung von Hotfixes in sehr kurzer Zeit möglich, da keine Rücksicht auf den Entwicklungsstand genommen werden muss.
 
 ---
 

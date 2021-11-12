@@ -7,9 +7,13 @@ main:
   - name: Home
     url: '/'
     weight: 10
+  - name: Termine
+    url: '/event'
+    weight: 20
+    identifier: ivents
   - name: Kurse
     url: '/course'
-    weight: 20
+    weight: 30
     identifier: courses
   # - name: Data science
   #   url: '/course/example/'
@@ -17,7 +21,7 @@ main:
   #   parent: courses
   - name: Blog
     url: 'https://blog.eugen.page'
-    weight: 30
+    weight: 40
  # - name: Kontakt
  #   url: '/contact'
  #   weight: 60

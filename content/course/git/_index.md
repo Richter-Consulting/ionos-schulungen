@@ -9,9 +9,9 @@ tags:
 weight: 10
 ---
 
-- [Präsentation]({{< relref "/slides/git" >}})
-- Präsentation (Download)
-- [Nächster Kurs]({{< relref "/event/git-2021-2" >}})
+- {{< icon name="slideshare" pack="fab" >}} [Präsentation]({{< relref "/slides/git" >}})
+- {{< icon name="file-pdf" pack="fas" >}} [Präsentation (Download)](git_slides.pdf)
+- {{< icon name="calendar-day" pack="fas" >}} [Nächster Kurs]({{< relref "/event/git-2021-2" >}})
 
 > _Die Code-Beispiele werden für Linus/macOS in Bash und unter Windows in PowerShel (Core) abgebildet. Sind die erforderlichen Befehle gleich, werden diese nur in Bash angezeigt. Diese können 1:1 in PowerShell eingegeben werden._
 

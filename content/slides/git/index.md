@@ -198,7 +198,7 @@ develop.commit("Day five");
 
 ## Git-flow
 
-### master, develop, feature, release, hotfix
+### main, develop, feature, release, hotfix
 
 ![Git Flow Branches](git_gitflow.png)
 

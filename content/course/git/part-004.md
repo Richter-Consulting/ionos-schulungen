@@ -35,9 +35,8 @@ Mode                 LastWriteTime         Length Name
 Wenn wir jetzt `git status` aufrufen, sehen wir zwei noch nicht versionierte Dateien. Das wollen wir eigentlich nicht sehen, da diese Dateien uns nicht interessieren.
 
 ```bash
-# Linux / macOS
 repo_1$ git status
-On branch master
+On branch main
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
         kapitel_1.bak
@@ -71,7 +70,7 @@ Mode                 LastWriteTime         Length Name
 ```
 Nun kann in die betreffende Datei `.gitignore_global` die Liste der globalen Ausnahmen gepflegt werden. Fügen Sie in unserem Fall einfach folgendes als erste Zeilen in die Datei ein:
 
-```
+```ini
 # Ignore global backup files
 *.bak
 ```
@@ -91,9 +90,8 @@ Pro Zeile in der Datei wird eine Ausnahme definiert, die auch Globings (Platzhal
 Nach dem Hinzufügen der oberen Ausnahme, können wir wieder mit `git status` unsere Bemühungen überprüfen.
 
 ```bash
-# Linux / macOS
 repo_1$ git status
-On branch master
+On branch main
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
         kapitel_1.~
@@ -129,7 +127,7 @@ Mode                 LastWriteTime         Length Name
 
 Fügen Sie in die neue Ausnahmedatei folgende Zeilen, um unsere `.~` Datei von der Versionsverwaltung auszuschließen.
 
-```
+```ini
 # Exclude temporal files
 *.~
 ```
@@ -137,9 +135,8 @@ Fügen Sie in die neue Ausnahmedatei folgende Zeilen, um unsere `.~` Datei von d
 Mit `git status` sehen wir nun, dass auch die `.~` Datei in der Auflistung nicht mehr auftacht, dafür aber unsere neue `.gitignore` Ausnahmedatei. Diese sollen wir versionieren.
 
 ```bash
-# Linux / macOS
 repo_1$ git status
-On branch master
+On branch main
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
         .gitignore
@@ -148,10 +145,9 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 ```bash
-# Linux / macOS
 repo_1$ git add .gitignore
 repo_1$ git commit -m "Add repo ignore file for temp files"
-[master d8f7b79] Add repo ignore file for temp files
+[main d8f7b79] Add repo ignore file for temp files
  1 file changed, 1 insertion(+)
  create mode 100644 .gitignore
 ```

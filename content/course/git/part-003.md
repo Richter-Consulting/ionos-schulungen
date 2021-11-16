@@ -12,9 +12,8 @@ weight: 40
 Die Historie eines Repositorys kann über den Befehl `log` angesehen werden. Dieser gibt eine sehr ausführliche Information über alle gemachten Commits. Der Befehl hat viele Parameter und kann sehr gut angepasst werden (was wir später noch nutzen werden).
 
 ```bash
-# Linux / macOS
 repo_1$ git log
-commit 221df61c6e0b69af839d95efff837ecebf7e443f (HEAD -> master)
+commit 221df61c6e0b69af839d95efff837ecebf7e443f (HEAD -> main)
 Author: Eugen [WebDucer] Richter <kurse@richter.consulting>
 Date:   Tue Sep 21 08:06:48 2021 +0200
 
@@ -26,17 +25,15 @@ Date:   Tue Sep 21 08:06:48 2021 +0200
 Wenn die Anzahl der Commits steigt, wird die _ausführliche_ Ausgabe der Historie sehr unübersichtlich. Mit dem Parameter `--pretty=oneline` kann die Ausgabe pro Commit auf eine Zeile reduziert werden.
 
 ```bash
-# Linux / macOS
 repo_1$ git log --pretty=oneline
-221df61c6e0b69af839d95efff837ecebf7e443f (HEAD -> master) feat: Start des ersten Kapitels
+221df61c6e0b69af839d95efff837ecebf7e443f (HEAD -> main) feat: Start des ersten Kapitels
 ```
 
 Mit den Parametern `--oneline --decorate` wird die Ausgabe noch kürzer. Dabei wird der Commit-Hash auf 7 Zeichen gekürzt (statt 32). Die Kürzung ist für die meisten Repositories unproblematisch und weiterhin eindeutig.
 
 ```bash
-# Linux / macOS
 repo_1$ git log --oneline --decorate
-221df61 (HEAD -> master) feat: Start des ersten Kapitels
+221df61 (HEAD -> main) feat: Start des ersten Kapitels
 ```
 
 ### Aliases
@@ -44,7 +41,6 @@ repo_1$ git log --oneline --decorate
 Da man die langen Befehle mit vielen Parametern nicht jedes Mal aus dem Gedächtnis herauskramen will, bietet git die Möglichkeit, diese mit einem Alias (alternativen Namen) zu versehen. Wir vergeben für unsere Log-Anzeige ein Alias `pl` (für pritty log).
 
 ```bash
-# Linux / macOS
 repo_1$ git config --global alias.pl 'log --graph --oneline --decorate --all'
 ```
 
@@ -59,7 +55,6 @@ Das Alias wir dabei in der globalen (`--global`) Konfiguration von git gespeiche
 Nun können wir mit dem einfachen `git pl` das Log mit vielen Parametern einfach aufrufen.
 
 ```bash
-# Linux / macOS
 repo_1$ git pl
-* 221df61 (HEAD -> master) feat: Start des ersten Kapitels
+* 221df61 (HEAD -> main) feat: Start des ersten Kapitels
 ```

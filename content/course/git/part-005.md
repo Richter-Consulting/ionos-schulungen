@@ -14,20 +14,20 @@ Legen wir zuerst ein paar Commits mit Änderungen an, damit etwas zum Anschauen 
 
 - Commit 1
   - Inhalt
-    ```
+    ```markdown
     # Kapitel 1
     Es war ein Mal...
     ```
   - Message: `Kapitel 1 der Geschichte starten`
 - Commit 2
   - Inhalt
-    ```
+    ```markdown
     Viele Jahre später ...
     ```
   - Message: `Vortsetzung in vielen Jahren`
 - Commit 3
   - Inhalt
-    ```
+    ```markdown
     Nach 20 Jahren treffen sich die Freunde wieder.
     Das Kaffee, dass damals an diesem Platz stand, existiert nicht mehr.
     ```
@@ -46,9 +46,8 @@ Das Kaffee, dass damals an diesem Platz stand, existiert nicht mehr.
 Und die Historie mit unserem Alias `pl` sollte in etwa wie folgt aussehen (die Hashwerte sind bei Ihnen natürlich ganz anders).
 
 ```bash
-# Linux / macOS
 repo_1$ git pl
-* 184a87e (HEAD -> master) Treffen nach 20 Jahren
+* 184a87e (HEAD -> main) Treffen nach 20 Jahren
 * de63512 Vortsetzung in vielen Jahren
 * c58434b Kapitel 1 der Geschichte starten
 * d8f7b79 Add repo ignore file for temp files
@@ -65,7 +64,7 @@ Ohne einen Dateinamen, werden die Änderungen vom kompletten Repository angezeig
 
 1. Entfernen Sie die Zeile 3 (`Viele Jahre später ...`)
 2. Fügen Sie nach der Zeile 3 folgendes ein
-    ```
+    ```markdown
     Sie verabredeten sich in ihrem alten Kaffee zu treffen,
     dass sie immer nach der Schule besucht haben.
     ```
@@ -83,8 +82,7 @@ Das Kaffee, dass damals an diesem Platz stand, existiert nicht mehr.
 
 Rufen Sie nun den Befehl `git diff` auf (mit oder ohne den Dateinamen).
 
-```bash
-# Linux / macOS
+```diff
 repo_1$ git diff kapitel_1.txt
 diff --git a/kapitel_1.txt b/kapitel_1.txt
 index 20f47a6..8cc2eca 100644
@@ -111,10 +109,9 @@ Wollen wir die Datei zwischen zwei bestimmten Versionen (Commits) vergleichen, m
 
 Als erstes können wir explizit zwei Commit angeben, die wir miteinander vergleichen wollen. Die Commit-Hashes können wir sehr einfach mit unserem `git pl` Alias anzeigen lassen.
 
-```bash
-# Linux / macOS
+```diff
 repo_1$ git pl
-* 184a87e (HEAD -> master) Treffen nach 20 Jahren
+* 184a87e (HEAD -> main) Treffen nach 20 Jahren
 * de63512 Vortsetzung in vielen Jahren
 * c58434b Kapitel 1 der Geschichte starten
 * d8f7b79 Add repo ignore file for temp files
@@ -135,8 +132,7 @@ index e69de29..61a6fe5 100644
 
 Wenn Sie in der Historie nur wenige Commits zurück gehen wollen, lässt sich das auch mit dem `HEAD` Zeiger erledigen. `HEAD` steht immer auf dem letzen Commit. Mit der `^` und `~x` Syntax kann man vom `HEAD` aus 1 oder `x` Commits zurück gehen. Das obere Ergebnis erreichen wir also auch mit dem folgenden Befehl (ohne die Commit-Hashes zu kennen).
 
-```bash
-# Linux / macOS
+```diff
 repo_1$ git diff HEAD~3 HEAD^ kapitel_1.txt
 diff --git a/kapitel_1.txt b/kapitel_1.txt
 index e69de29..61a6fe5 100644
@@ -153,8 +149,7 @@ index e69de29..61a6fe5 100644
 
 Passen Sie auf die Reihenfolge auf. Im Normalfall interessiert Sie, was seit einem bestimmten Commit passiert ist, die Reihenfolge der Parameter ist also älterer Commit und dann neuerer. Wenn Sie die Parameter vertauchen, erhalten Sie die Ansicht, was müsste gemacht werden, um den _ursprünglichen_ Zustand wieder zu erhalten.
 
-```bash
-# Linux / macOS
+```diff
 repo_1$ git diff HEAD^ HEAD~3 kapitel_1.txt
 diff --git a/kapitel_1.txt b/kapitel_1.txt
 index 61a6fe5..e69de29 100644
@@ -166,3 +161,13 @@ index 61a6fe5..e69de29 100644
 -Viele Jahre später ...
 \ No newline at end of file
 ```
+
+Schreiben Sie nun die letzte, noch nicht festgeschiebene Änderung an unserer Datei fest. Damit wir nicht jedes Mal zwei Befehle ausführen müssen (`add` + `commit`), können wir beides kombinieren. Dabei werden alle geänderten / gelöschten Dateien in das Stating-Bereich übernommen und in den Commit aufgenommen. Neue Dateien (die noch nicht unter Versionsverwaltung stehen) werden dabei nicht berücksichtigt. Diese müssen zuerst mit `git add` hinzugefügt werden.
+
+```bash
+/repo_1$ git commit -a -m "Korrekturen am Kapitel 1"
+[main 71f2b10] Korrekturen am Kapitel 1
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+```
+
+Der Parameter `-a` (oder auch in der Langschreibweise `--all`) führt zu der gewollten Aktion.

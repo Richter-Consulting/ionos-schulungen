@@ -76,7 +76,7 @@ Den aktuellen Zustand des Ordners, aus Sicht von git, können wir mit dem Befehl
 ```bash
 # Linux / macOS
 repo_1$ git status
-On branch master
+On branch main
 
 No commits yet
 
@@ -86,7 +86,7 @@ nothing to commit (create/copy files and use "git add" to track)
 ```powershell
 # Windows
 PS repo_1> git status
-On branch master
+On branch main
 
 No commits yet
 

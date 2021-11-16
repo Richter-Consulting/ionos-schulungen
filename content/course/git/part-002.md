@@ -30,8 +30,8 @@ Mode                 LastWriteTime         Length Name
 Wenn wir nun den Status des Repositorys aufrufen, erhalten wir eine ganz andere Meldung.
 
 ```bach
-PS repo_1>git status
-On branch master
+repo_1$ git status
+On branch main
 
 No commits yet
 
@@ -49,7 +49,7 @@ Die Meldung besagt, dass in unserem Ordner eine neue, noch nicht versionierte (_
 ```bash
 repo_1$ git add kapitel_1.txt
 repo_1$ git status
-On branch master
+On branch main
 
 No commits yet
 
@@ -96,7 +96,7 @@ Nutzten Sie git zum ersten Mal, erscheint eine Fehlermeldung, dass git uns noch 
 repo_1$ git config --global user.email "kurse@richter.consulting"
 repo_1$ git config --global user.name "Eugen [WebDucer] Richter"
 repo_1$ git commit -m "feat: Start des ersten Kapitels"
-[master (root-commit) 221df61] feat: Start des ersten Kapitels
+[main (root-commit) 221df61] feat: Start des ersten Kapitels
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 kapitel_1.txt
 ```

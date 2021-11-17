@@ -29,7 +29,7 @@ repo_1$ git log --pretty=oneline
 221df61c6e0b69af839d95efff837ecebf7e443f (HEAD -> main) feat: Start des ersten Kapitels
 ```
 
-Mit den Parametern `--oneline --decorate` wird die Ausgabe noch kürzer. Dabei wird der Commit-Hash auf 7 Zeichen gekürzt (statt 32). Die Kürzung ist für die meisten Repositories unproblematisch und weiterhin eindeutig.
+Mit den Parametern `--oneline --decorate` wird die Ausgabe noch kürzer. Dabei wird der Commit-Hash auf 7 Zeichen gekürzt (statt 32). Die Kürzung ist für die meisten Repositorys unproblematisch und weiterhin eindeutig.
 
 ```bash
 repo_1$ git log --oneline --decorate
@@ -38,7 +38,7 @@ repo_1$ git log --oneline --decorate
 
 ### Aliases
 
-Da man die langen Befehle mit vielen Parametern nicht jedes Mal aus dem Gedächtnis herauskramen will, bietet git die Möglichkeit, diese mit einem Alias (alternativen Namen) zu versehen. Wir vergeben für unsere Log-Anzeige ein Alias `pl` (für pritty log).
+Da man die langen Befehle mit vielen Parametern nicht jedes Mal aus dem Gedächtnis herauskramen will, bietet git die Möglichkeit, diese mit einem Alias (alternativen Namen) zu versehen. Wir vergeben für unsere Log-Anzeige ein Alias `pl` (für pretty log).
 
 ```bash
 repo_1$ git config --global alias.pl 'log --graph --oneline --decorate --all'
@@ -47,8 +47,8 @@ repo_1$ git config --global alias.pl 'log --graph --oneline --decorate --all'
 Das Alias wir dabei in der globalen (`--global`) Konfiguration von git gespeichert.
 
 - `log`: git Befehl, in unserem Fall log
-- `--graph`: Darstelluing des Logs als Graph (dazu später mehr, wenn wir mehr als ein branch haben)
-- `--oneline`: Einzeilige Darstelluing
+- `--graph`: Darstellung des Logs als Graph (dazu später mehr, wenn wir mehr als ein branch haben)
+- `--oneline`: Einzeilige Darstellung
 - `--decorate`: _Hübsche_ Darstellung der Zeile
 - `--all`: Alle Branches anzeigen, nicht nur das aktuelle (später mehr dazu)
 

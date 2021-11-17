@@ -15,7 +15,7 @@ Als ein **Repository** bei **git** wird ein Ordner bezeichnet, der unter Version
 
 ## Ordner anlegen
 
-Als erstes legen wir einen Ordner an, den wir gleich unter die Versionsverwaltung stellen wollen. Aktuell werden wir es mit einem leeren Ordner tun, das Gleiche lässt sich aber auch mit einem vorhandenen Ordner erledigen, wenn Sie desen Inhalt versionieren wollen.
+Als erstes legen wir einen Ordner an, den wir gleich unter die Versionsverwaltung stellen wollen. Aktuell werden wir es mit einem leeren Ordner tun, das Gleiche lässt sich auch mit einem vorhandenen Ordner erledigen, wenn Sie desen Inhalt versionieren wollen.
 
 Wechseln Sie in den neu erzeugten Ordner.
 
@@ -93,4 +93,4 @@ No commits yet
 nothing to commit (create/copy files and use "git add" to track)
 ```
 
-Bei einem neu angelegten Repository ist der Status natürlich sehr sauber. Es sind ja noch keine Dateien versioniert und es liegen auch noch keine zum Versionieren vor.
+Bei einem neu angelegten Repository ist der Status sauber. Es sind ja keine Dateien versioniert und es liegen keine zum Versionieren vor.

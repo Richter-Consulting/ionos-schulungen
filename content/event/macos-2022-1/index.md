@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "macOS Kurs"
+title: "macOS Kurs 2022 (I)"
 event: "MacOS besser kennenlernen"
 event_url: "https://www.mvhs.de/programm/windows-mac-linux.19680/N483430"
 location: "MVHS Bildungszentrum"

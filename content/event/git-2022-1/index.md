@@ -1,9 +1,10 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Git Kurs 2022 (I)"
+title: "Git Kurs 2021 (II)"
+alias: "git-kurs-2021-2"
 event: "Git - Versionsverwaltung für Dokumente, Dokumentationen, Code und mehr"
-#event_url: "https://www.mvhs.de/programm/it-digitales.19596/N486680"
+event_url: "https://www.mvhs.de/programm/it-digitales.19596/N486680"
 location: "Online (WebEx)"
 address:
   street:
@@ -16,12 +17,12 @@ abstract:
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2022-04-27T18:00:00+01:00
-date_end: #2022-05-11T20:00:00+01:00
+date: 2021-11-10T19:00:00+01:00
+date_end: #2021-11-24T21:00:00+01:00
 all_day: false
 
 # Schedule page publish date (NOT event date).
-publishDate: 2021-11-29T08:00:11+02:00
+publishDate: 2021-08-24T08:00:11+02:00
 
 authors:
 - Eugen
@@ -32,7 +33,7 @@ tags:
 - MVHS
 
 # Is this a featured event? (true/false)
-featured: false
+featured: true
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
@@ -45,10 +46,10 @@ image:
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.
 links:
-#- name: Anmeldung bei MVHS
-#  url: https://www.mvhs.de/programm/it-digitales.19596/N486680
-#  icon_pack: fas
-#  icon: book-open
+- name: Anmeldung bei MVHS
+  url: https://www.mvhs.de/programm/it-digitales.19596/N486680
+  icon_pack: fas
+  icon: book-open
 - name: Kurs Unterlagen
   url: /course/git
   icon_pack: fas
@@ -83,7 +84,7 @@ Kursinhalt: Grundlagen Versionierung; Geschichte; aktuelle Systeme; Strategien; 
 
 ## Nächster Termin an der MVHS
 
-- 3x, 27.04.2022 - 11.05.2022
-  1. Mi. 27.04.2022 , 18:00 – 20:00 Uhr
-  2. Mi. 04.05.2022 , 18:00 – 20:00 Uhr
-  3. Mi. 11.05.2022 , 18:00 – 20:00 Uhr
+- 3x, 10.11.2021 - 24.11.2021
+  1. Mi. 10.11.2021 , 19:00 – 21:00 Uhr
+  2. Mi. 17.11.2021 , 19:00 – 21:00 Uhr
+  3. Mi. 24.11.2021 , 19:00 – 21:00 Uhr

@@ -44,6 +44,13 @@ interests:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
+- icon: book-open
+  icon_pack: fab
+  link: https://www.mvhs.de/services/dozierendenportraets/dozent-2014
+  label: "MVHS Dozent"
+  display:
+    header: true
+- icon: twitter
 - icon: github
   icon_pack: fab
   link: https://github.com/WebDucer
@@ -71,7 +78,7 @@ social:
   label: "Profil bei LINKED IN"
   display:
     header: true
-- icon: book-open
+- icon: book
   icon_pack: fas
   link: https://app.pluralsight.com/profile/WebDucerER
   label: "Lernen bei Pluralsight"

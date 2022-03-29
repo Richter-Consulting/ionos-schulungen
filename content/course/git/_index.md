@@ -7,6 +7,12 @@ tags:
 - Git
 - MVHS
 weight: 10
+summary: |
+    Arbeiten Sie in einer Gruppe an einem Dokument oder programmieren Sie gerne? Wollen Sie wissen, was Sie oder Andere zuletzt am Dokument geändert haben?
+
+    Lernen Sie, wie eine Version (von einem oder mehreren Dokumenten) mit Git auf dem Rechner gesichert, verglichen, mit anderen geteilt, zusammengeführt und wiederhergestellt werden kann. Erstellen Sie mehrere Bearbeitungszweige, um an mehreren Dokumentversionen parallel arbeiten zu können.
+
+    Kursinhalt: Grundlagen Versionierung; Geschichte; aktuelle Systeme; Strategien; lokaler Einsatz von Git; Git mit Server-Einsatz; Arbeiten an mehreren Zweigen.
 ---
 
 - {{< icon name="slideshare" pack="fab" >}} [Präsentation]({{< relref "/slides/git" >}})

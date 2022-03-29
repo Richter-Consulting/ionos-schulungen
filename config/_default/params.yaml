@@ -5,115 +5,102 @@
 
 # Appearance
 
-theme: custom
-day_night: true
-font: ''
-font_size: L
+appearance:
+  theme_day: webducer
+  theme_night: webducer
+  font: native
+  font_size: L
 
 # SEO
 
-site_type: Organization
-local_business_type: ''
-org_name: ''
-description: ''
-twitter: 'WebDucer'
-
-# Contact (edit or remove options as required)
-
-email: webmaster@webducer.de
-appointment_url: 'https://calendly.com'
-contact_links:
-  - icon: comments
-    icon_pack: fas
-    name: Discuss on the forum
-    link: 'https://github.com/wowchemy/wowchemy-hugo-modules/discussions'
+marketing:
+  seo:
+    site_type: Organization
+    local_business_type: ''
+    org_name: ''
+    description: ''
+    twitter: 'wowchemy'
+  analytics:
+    google_analytics: ''
+    baidu_tongji: ''
+  verification:
+    google: ''
+    baidu: ''
 
 # Site header
 
-main_menu:
-  enable: true
-  align: c
-  show_logo: true
-  show_language: false
-  show_day_night: true
-  show_search: true
-  highlight_active_link: true
+header:
+  navbar:
+    enable: true
+    align: l
+    show_logo: true
+    show_language: false
+    show_day_night: true
+    show_search: true
+    highlight_active_link: true
+
+# Site footer
+
+footer:
+  copyright:
+    notice: '© {year} Eugen [WebDucer] Richter. This work is licensed under {license}'
+    license:
+      enable: true
+      allow_derivatives: true
+      share_alike: true
+      allow_commercial: true
 
 # Localization
 
-date_format: 'Jan 2, 2006'
-time_format: '15:04'
-address_format: de
+locale:
+  date_format: 'Jan 2, 2006'
+  time_format: '15:04'
+  address_format: de
 
 # Site features
 
-highlight: true
-highlight_languages: [csharp, bash, powershell]
-math: false
-diagram: true
-privacy_pack: false
-edit_page:
-  repo_url: ''
-  content_dir: ''
-  repo_branch: main
-  editable:
-    page: false
-    post: false
-    book: false
-show_related:
-  book: true
-  page: false
-  post: true
-  project: true
-  publication: true
-  event: true
-reading_time: true
-section_pager: false
-docs_section_pager: true
-sharing: true
-copyright_license:
-  enable: true
-  allow_derivatives: true
-  share_alike: true
-  allow_commercial: false
-  notice: 'This work is licensed under {license}'
-abstract_length: 135
-plugins_js: []
-avatar:
-  gravatar: false
-  shape: circle
-breadcrumb:
-  page_types:
-    book: true
-comments:
-  provider: ''
-  commentable:
-    post: true
-    book: true
-    project: true
-    publication: true
-    event: true
-  disqus:
-    shortname: ''
-    show_count: true
-  commento:
-    url: ''
-search:
-  provider: wowchemy
-  algolia:
-    app_id: ''
+features:
+  syntax_highlighter:
+    enable: true
+    extra_languages: []
+  math:
+    enable: false
+  privacy_pack:
+    enable: false
+  repository:
+    url: 'https://github.com/Richter-Consulting/ionos-schulungen'
+    content_dir: content
+    branch: main
+  avatar:
+    gravatar: false
+    shape: circle
+  comment:
+    provider: ''
+    disqus:
+      shortname: ''
+      show_count: true
+    commento:
+      url: ''
+  search:
+    provider: wowchemy
+    algolia:
+      app_id: ''
+      api_key: ''
+      index_name: ''
+      show_logo: false
+  map:
+    provider: ''
     api_key: ''
-    index_name: ''
-    show_logo: false
-marketing:
-  google_analytics: ''
-  google_tag_manager: ''
-  google_site_verification: ''
-  baidu_site_verification: ''
-  baidu_tongji: ''
-  matomo_analytics: true
-cms:
-  local_backend: false
-icon:
-  pack:
-    ai: false
+    zoom: 15
+
+# Extensions
+
+extensions:
+  cms:
+    branch: master
+    local_backend: false
+  isotope:
+    # Enable if you use the Portfolio widget or Publication filter
+    enable: true
+  academicons:
+    enable: true

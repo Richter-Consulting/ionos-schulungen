@@ -3,7 +3,7 @@
 
 title: "macOS Kurs 2022 (II)"
 event: "macOS besser kennenlernen"
-#event_url: "https://www.mvhs.de/programm/windows-mac-linux.19680/N483430"
+#event_url: "https://www.mvhs.de/programm/windows-mac-linux.19680/O483430"
 location: "MVHS Bildungszentrum"
 address:
   street: Einsteinstr. 28
@@ -44,10 +44,10 @@ image:
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.
 links:
-#- name: Anmeldung bei MVHS
-#  url: https://www.mvhs.de/programm/windows-mac-linux.19680/N483430
-#  icon_pack: fas
-#  icon: book-open
+- name: Anmeldung bei MVHS
+  url: https://www.mvhs.de/programm/windows-mac-linux.19680/O483430
+  icon_pack: fas
+  icon: book-open
 # - name: Kurs Unterlagen
 #   url: /course/git
 #   icon_pack: fas

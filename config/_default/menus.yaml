@@ -10,18 +10,15 @@ main:
   - name: Termine
     url: '/event'
     weight: 20
-    identifier: ivents
   - name: Kurse
     url: '/course'
     weight: 30
-    identifier: courses
-  # - name: Data science
-  #   url: '/course/example/'
-  #   weight: 10
-  #   parent: courses
   - name: Blog
     url: 'https://blog.eugen.page'
-    weight: 40
- # - name: Kontakt
- #   url: '/contact'
- #   weight: 60
+    weight: 100
+
+# Link to a PDF of your resume/CV from the menu.
+# To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
+#  - name: CV
+#    url: uploads/resume.pdf
+#    weight: 70

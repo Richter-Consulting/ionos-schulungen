@@ -1,2 +1,1 @@
-# Start preview
-hugo server --disableFastRender --i18n-warnings --navigateToChanged -F -D
+hugo server --disableFastRender --navigateToChanged -F -D

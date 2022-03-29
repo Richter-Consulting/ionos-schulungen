@@ -45,7 +45,7 @@ interests:
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
 - icon: book-open
-  icon_pack: fab
+  icon_pack: fas
   link: https://www.mvhs.de/services/dozierendenportraets/dozent-2014
   label: "MVHS Dozent"
   display:

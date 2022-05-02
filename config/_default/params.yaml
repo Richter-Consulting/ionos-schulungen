@@ -4,7 +4,6 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Appearance
-
 appearance:
   theme_day: webducer
   theme_night: webducer
@@ -17,9 +16,9 @@ marketing:
   seo:
     site_type: Organization
     local_business_type: ''
-    org_name: ''
+    org_name: 'WebDucer - IT & Internet Service'
     description: ''
-    twitter: 'wowchemy'
+    twitter: 'webducer'
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -62,7 +61,12 @@ locale:
 features:
   syntax_highlighter:
     enable: true
-    extra_languages: []
+    extra_languages:
+    - bash
+    - typescript
+    - powershell
+    - diff
+    - markdown
   math:
     enable: false
   privacy_pack:

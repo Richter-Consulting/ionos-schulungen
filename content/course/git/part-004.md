@@ -147,7 +147,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```bash
 repo_1$ git add .gitignore
 repo_1$ git commit -m "Add repo ignore file for temp files"
-[main d8f7b79] Add repo ignore file for temp files
+[main c3b4e8b] Add repo ignore file for temp files
  1 file changed, 1 insertion(+)
  create mode 100644 .gitignore
 ```

@@ -13,7 +13,7 @@ Die Historie eines Repositorys kann über den Befehl `log` angesehen werden. Die
 
 ```bash
 repo_1$ git log
-commit 221df61c6e0b69af839d95efff837ecebf7e443f (HEAD -> main)
+commit e12fb6dc6e0b69af839d95efff837ecebf7e443f (HEAD -> main)
 Author: Eugen [WebDucer] Richter <kurse@richter.consulting>
 Date:   Tue Sep 21 08:06:48 2021 +0200
 
@@ -26,14 +26,14 @@ Wenn die Anzahl der Commits steigt, wird die _ausführliche_ Ausgabe der Histori
 
 ```bash
 repo_1$ git log --pretty=oneline
-221df61c6e0b69af839d95efff837ecebf7e443f (HEAD -> main) feat: Start des ersten Kapitels
+e12fb6dc6e0b69af839d95efff837ecebf7e443f (HEAD -> main) feat: Start des ersten Kapitels
 ```
 
 Mit den Parametern `--oneline --decorate` wird die Ausgabe noch kürzer. Dabei wird der Commit-Hash auf 7 Zeichen gekürzt (statt 32). Die Kürzung ist für die meisten Repositorys unproblematisch und weiterhin eindeutig.
 
 ```bash
 repo_1$ git log --oneline --decorate
-221df61 (HEAD -> main) feat: Start des ersten Kapitels
+e12fb6d (HEAD -> main) feat: Start des ersten Kapitels
 ```
 
 ### Aliases
@@ -56,5 +56,5 @@ Nun können wir mit dem einfachen `git pl` das Log mit vielen Parametern einfach
 
 ```bash
 repo_1$ git pl
-* 221df61 (HEAD -> main) feat: Start des ersten Kapitels
+* e12fb6d (HEAD -> main) feat: Start des ersten Kapitels
 ```

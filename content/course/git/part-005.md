@@ -24,7 +24,7 @@ Legen wir zuerst ein paar Commits mit Änderungen an, damit etwas zum Anschauen 
     ```markdown
     Viele Jahre später ...
     ```
-  - Message: `Vortsetzung in vielen Jahren`
+  - Message: `Fortsetzung in vielen Jahren`
 - Commit 3
   - Inhalt
     ```markdown
@@ -47,11 +47,11 @@ Und die Historie mit unserem Alias `pl` sollte in etwa wie folgt aussehen (die H
 
 ```bash
 repo_1$ git pl
-* 184a87e (HEAD -> main) Treffen nach 20 Jahren
-* de63512 Vortsetzung in vielen Jahren
-* c58434b Kapitel 1 der Geschichte starten
-* d8f7b79 Add repo ignore file for temp files
-* 221df61 feat: Start des ersten Kapitels
+* e4c2672 (HEAD -> main) Treffen nach 20 Jahren
+* bd4b2df Fortsetzung in vielen Jahren
+* e47bbe0 Kapitel 1 der Geschichte starten
+* c3b4e8b Add repo ignore file for temp files
+* e12fb6d feat: Start des ersten Kapitels
 ```
 
 ## Aktuelle Änderungen zeigen
@@ -111,12 +111,12 @@ Als Erstes können wir explizit zwei Commit angeben, die wir miteinander verglei
 
 ```diff
 repo_1$ git pl
-* 184a87e (HEAD -> main) Treffen nach 20 Jahren
-* de63512 Vortsetzung in vielen Jahren
-* c58434b Kapitel 1 der Geschichte starten
-* d8f7b79 Add repo ignore file for temp files
-* 221df61 feat: Start des ersten Kapitels
-repo_1$ git diff d8f7b79 de63512
+* e4c2672 (HEAD -> main) Treffen nach 20 Jahren
+* bd4b2df Fortsetzung in vielen Jahren
+* e47bbe0 Kapitel 1 der Geschichte starten
+* c3b4e8b Add repo ignore file for temp files
+* e12fb6d feat: Start des ersten Kapitels
+repo_1$ git diff c3b4e8b bd4b2df
 diff --git a/kapitel_1.txt b/kapitel_1.txt
 index e69de29..61a6fe5 100644
 --- a/kapitel_1.txt
@@ -166,7 +166,7 @@ Schreiben Sie nun die letzte, noch nicht festgeschriebene Änderung an unserer D
 
 ```bash
 /repo_1$ git commit -a -m "Korrekturen am Kapitel 1"
-[main 71f2b10] Korrekturen am Kapitel 1
+[main 027c2f3] Korrekturen am Kapitel 1
  1 file changed, 2 insertions(+), 1 deletion(-)
 ```
 

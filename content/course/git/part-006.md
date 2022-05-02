@@ -31,7 +31,7 @@ git config --global init.defaultBranch main
 Den vorhandenen `master` Brnach können Sie auch jederzeit auf neue Konvention umstellen.
 
 ```bash
-git branch - m master main
+git branch -m master main
 ```
 {{</ callout >}}
 
@@ -48,7 +48,7 @@ repo_1$ git branch
 
 ## Zum Branch wechseln
 
-Um nun auf den neuen Branch arbeiten zu können, wechels wir zu diesem mit dem `checkout` Befehl-
+Um nun auf den neuen Branch arbeiten zu können, wecheln wir zu diesem mit dem `checkout` Befehl.
 
 ```bash
 repo_1$ git checkout develop
@@ -74,14 +74,14 @@ Am Ende sollte die Historie (und Status) in etwa wie folgt aussehen:
 
 ```bash
 repo_1$ git pl
-* 0a59fd0 (HEAD -> develop) Nachtszene
-* 92d6779 Ideen zum zweiten Kapitel
-* 71f2b10 (main) Korrekturen am Kapitel 1
-* 184a87e Treffen nach 20 Jahren
-* de63512 Vortsetzung in vielen Jahren
-* c58434b Kapitel 1 der Geschichte starten
-* d8f7b79 Add repo ignore file for temp files
-* 221df61 feat: Start des ersten Kapitels
+* aac4d8b (HEAD -> develop) Nachtszene
+* e6b896a Ideen zum zweiten Kapitel
+* 027c2f3 (main) Korrekturen am Kapitel 1
+* e4c2672 Treffen nach 20 Jahren
+* bd4b2df Fortsetzung in vielen Jahren
+* e47bbe0 Kapitel 1 der Geschichte starten
+* c3b4e8b Add repo ignore file for temp files
+* e12fb6d feat: Start des ersten Kapitels
 repo_1$ git status
 On branch develop
 Untracked files:
@@ -119,7 +119,7 @@ Nicht versionierte Dateien sind für git unsichtbar und werden von diesem nicht 
 
 ## Paralles Arbeiten
 
-nun simulieren wir, dass auf beiden Branches nun gearbeitet wurde. Dazu versionieren wir die Datei `kapitel_3.txt` und fügen ein wenig Text hinzu.
+Nun simulieren wir, dass auf beiden Branches nun gearbeitet wurde. Dazu versionieren wir die Datei `kapitel_3.txt` und fügen ein wenig Text hinzu.
 
 ```markdown
 # Kapitel 3
@@ -130,15 +130,15 @@ Das wird unsere Basis für den nächsten Kapitel, in dem wir versuchen die Branc
 
 ```bash
 repo_1$ git pl
-* 535a171 (HEAD -> main) Versenkung
-* f70fd71 Kapitel 3 Plot
-| * 0a59fd0 (develop) Nachtszene
-| * 92d6779 Ideen zum zweiten Kapitel
+* 663ea5a (HEAD -> main) Versenkung
+* 63bb3f0 Kapitel 3 Plot
+| * aac4d8b (develop) Nachtszene
+| * e6b896a Ideen zum zweiten Kapitel
 |/
-* 71f2b10 Korrekturen am Kapitel 1
-* 184a87e Treffen nach 20 Jahren
-* de63512 Vortsetzung in vielen Jahren
-* c58434b Kapitel 1 der Geschichte starten
-* d8f7b79 Add repo ignore file for temp files
-* 221df61 feat: Start des ersten Kapitels
+* 027c2f3 Korrekturen am Kapitel 1
+* e4c2672 Treffen nach 20 Jahren
+* bd4b2df Fortsetzung in vielen Jahren
+* e47bbe0 Kapitel 1 der Geschichte starten
+* c3b4e8b Add repo ignore file for temp files
+* e12fb6d feat: Start des ersten Kapitels
 ```

@@ -96,7 +96,7 @@ Nutzten Sie git zum ersten Mal, erscheint eine Fehlermeldung, dass git uns noch 
 repo_1$ git config --global user.email "kurse@richter.consulting"
 repo_1$ git config --global user.name "Eugen [WebDucer] Richter"
 repo_1$ git commit -m "feat: Start des ersten Kapitels"
-[main (root-commit) 221df61] feat: Start des ersten Kapitels
+[main (root-commit) e12fb6d] feat: Start des ersten Kapitels
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 kapitel_1.txt
 ```

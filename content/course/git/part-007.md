@@ -9,10 +9,10 @@ tags:
 weight: 80
 ---
 
-Nach getaner Arbeit, sollen die unterschiedlichen Stände der Arbeit wieder zusammengeführt werden. Dabei kann es zu 3 Konstellationen kommen:
+Nach getaner Arbeit sollen die unterschiedlichen Stände der Arbeit wieder zusammengeführt werden. Dabei kann es zu 3 Konstellationen kommen:
 
 1. Fast-Merge: Es wurden nur Änderungen auf neuen Branch gemacht, aber nicht auf `main`. Damit kann git einfach den **Zeiger** für `main` Branch auf den neuen Stand setzen. In diesem Fall spricht man von "Fast Merge". Es wird dabei kein extra Commit erzeugt.
-2. Merge: Beim Zusammenführen sind keine Probleme augetretten. In diesem Fall wir ein sogenannter "Merge"-Commit erstellt. Im Gegensatz zu einem normalen Commit, hat dieser Informationen zu den beiden Branches, statt nur einen.
+2. Merge: Beim Zusammenführen sind keine Probleme augetreten. In diesem Fall wir ein sogenannter "Merge"-Commit erstellt. Im Gegensatz zu einem normalen Commit, hat dieser Informationen zu den beiden Branches, statt nur einen.
 3. Conflict: Beim Zusammenführen kommt es zu einem Konflikt, den git nicht selbst lösen kann. Wir müssen alle Konflikte beseitigen und das Zusammenführen abzuschließen.
 
 Wir werden hier alle 3 Möglichkeiten durchspielen.
@@ -22,7 +22,7 @@ Wir werden hier alle 3 Möglichkeiten durchspielen.
 Wechseln Sie zuerst auf den `main`-Branch, wenn noch nicht geschehen. Erstellen Sie einen neuen Branch `feat_kap_4` und wechseln Sie zu diesem.
 
 {{< callout note >}}
-Da man meinstens beim Erzeugen eines neuen Branches auch gleich zu diesem wechseln möchte, gibt es eine Abkürzung. Statt `git branch <neuer_branch_name>` und `git checkout <neuer_branch_name>` eingeben zu müssen, kann man auch kürzer den `-b` Flag nutzen: `git checkout -b <neuer_branch_name>` eingeben.
+Da man meistens beim Erzeugen eines neuen Branches auch gleich zu diesem wechseln möchte, gibt es eine Abkürzung. Statt `git branch <neuer_branch_name>` und `git checkout <neuer_branch_name>` eingeben zu müssen, kann man auch kürzer den `-b` Flag nutzen: `git checkout -b <neuer_branch_name>` eingeben.
 {{</ callout >}}
 
 ```bash
@@ -60,9 +60,9 @@ repo_1$ git pl
 * e12fb6d feat: Start des ersten Kapitels
 ```
 
-Wenn man den Pfad folgt, sieht man hier sehr gut, dass `main` eigentlich auf demselben Pfad liegt, wie unser neuer neuer Branch `feat_kap_4`. Das ist die Voraussetzung für einen "Fast-Merge".
+Wenn man den Pfad folgt, sieht man hier sehr gut, dass `main` eigentlich auf demselben Pfad liegt, wie unser neuer Branch `feat_kap_4`. Das ist die Voraussetzung für einen "Fast-Merge".
 
-Wechselb wir nun zurück zu `main`. Anschließen führen wir die Beiden Zweige zusammen. Dazu muss man immer auf dem Branch drauf sein, in dem man den anderen Zweit integrieren will. Die Integration wird mit `git merge <branch_name>` durchgeführt. In der Ausgabe sollte nun sichtbar sein, dass ein "Fast-Merge" durchgeführt wurde.
+Wechseln wir nun zurück zu `main`. Anschließen führen wir die Beiden Zweige zusammen. Dazu muss man immer auf dem Branch drauf sein, in dem man den anderen Zweig integrieren will. Die Integration wird mit `git merge <branch_name>` durchgeführt. In der Ausgabe sollte nun sichtbar sein, dass ein "Fast-Merge" durchgeführt wurde.
 
 ```bash
 repo_1$ git checkout main
@@ -78,8 +78,8 @@ Fast-forward
 Auch an dem Log ist es sichtbar, dass ein "Fast-Merge" erstellt wurde:
 
 1. Es sind genauso viele Commits da, wie vorher.
-2. Letzer Commit hat denselben Hash. D.h. dieser wurde nicht geändert.
-3. Beide Branches, `main` und `feat_kap_4` zeichen auf denselben Commit.
+2. Letzter Commit hat denselben Hash. D.h. dieser wurde nicht geändert.
+3. Beide Branches, `main` und `feat_kap_4` zeigen auf denselben Commit.
 
 ```bash
 repo_1$ git pl
@@ -107,7 +107,7 @@ Deleted branch feat_kap_4 (was 10eabc1).
 
 ## Merge
 
-Für einen "normale" Zusammenführung haben wir auch bereits alles vorbereitet. Wir haben zwei Branches, auf dennen parallel gearbeitet wurde, `main` und `develop`. Nun können wir wieder auf `main` wechsel, falls noch nicht der Fall ist, und `develop` integrieren.
+Für eine "normale" Zusammenführung haben wir auch bereits alles vorbereitet. Wir haben zwei Branches, auf denen parallel gearbeitet wurde, `main` und `develop`. Nun können wir wieder auf `main` wechsel, falls noch nicht der Fall ist, und `develop` integrieren.
 
 ```bash
 repo_1$ git checkout main

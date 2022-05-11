@@ -18,6 +18,7 @@ weight: 110
 - {{< icon pack="fas" name="globe" >}}[Pro Git](https://git-scm.com/book/en/v2)
 - {{< icon pack="fab" name="amazon" >}}[Pro Git - Papierbuch Englisch (Affiliate)](https://amzn.to/30DYUTK)
 - {{< icon pack="fab" name="amazon" >}}[Git Schnelleinstieg: Versionsverwaltung lernen in 14 Tagen. Einfach und ohne Vorkenntnisse (Affiliate)](https://amzn.to/39j7qvx)
+- {{< icon pack="fab" name="amazon" >}}[Git: Projektverwaltung für Entwickler und DevOps-Teams. Inkl. Praxistipps und Git-Kommandoreferenz (Affiliate)](https://amzn.to/38mH8Zl)
 - {{< icon pack="fab" name="amazon" >}}[Git: Dezentrale Versionsverwaltung im Team – Grundlagen und Workflows (Affiliate)](https://amzn.to/3240tea)
 - {{< icon pack="fab" name="amazon" >}}[Versionsverwaltung mit Git: Praxiseinstieg (Affiliate)](https://amzn.to/3Crzwxz)
 

@@ -43,11 +43,11 @@ image:
 
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.
-links:
-- name: Anmeldung bei MVHS
+#links:
+#- name: Anmeldung bei MVHS
   #url: https://www.mvhs.de/programm/windows-mac-linux.19680/O483430
-  icon_pack: fas
-  icon: book-open
+#  icon_pack: fas
+#  icon: book-open
 # - name: Kurs Unterlagen
 #   url: /course/git
 #   icon_pack: fas

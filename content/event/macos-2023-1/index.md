@@ -1,9 +1,9 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "macOS Kurs 2022 (II)"
+title: "macOS Kurs 2023 (I)"
 event: "macOS besser kennenlernen"
-event_url: "https://www.mvhs.de/programm/windows-mac-linux.19680/O483430"
+#event_url: "https://www.mvhs.de/programm/windows-mac-linux.19680/O483430"
 location: "MVHS Bildungszentrum"
 address:
   street: Einsteinstr. 28
@@ -16,12 +16,12 @@ abstract:
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2022-07-30T09:15:00+02:00
+date: 2023-02-04T09:15:00+02:00
 date_end: #2022-07-31T16:00:00+02:00
 all_day: true
 
 # Schedule page publish date (NOT event date).
-publishDate: 2021-11-29T08:00:00+01:00
+publishDate: 2022-08-16T08:00:00+01:00
 
 authors:
 - Eugen
@@ -31,7 +31,7 @@ tags:
 - MVHS
 
 # Is this a featured event? (true/false)
-featured: false
+featured: true
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
@@ -45,7 +45,7 @@ image:
 #   Uncomment and edit lines below to show custom links.
 links:
 - name: Anmeldung bei MVHS
-  url: https://www.mvhs.de/programm/windows-mac-linux.19680/O483430
+  #url: https://www.mvhs.de/programm/windows-mac-linux.19680/O483430
   icon_pack: fas
   icon: book-open
 # - name: Kurs Unterlagen
@@ -78,6 +78,6 @@ Sie haben bereits Erfahrungen im Umgang mit Ihrem Mac und entdecken hier weitere
 
 ## Nächster Termin an der MVHS
 
-- 2x, 30.07.2022 - 31.07.2022
-  1. Sa. 30.07.2022 , 09:15 – 16:00 Uhr
-  2. So. 31.07.2022 , 09:15 – 16:00 Uhr
+- 2x, 04.02.2023 - 05.02.2023
+  1. Sa. 04.02.2023 , 09:15 – 16:00 Uhr
+  2. So. 05.02.2023 , 09:15 – 16:00 Uhr

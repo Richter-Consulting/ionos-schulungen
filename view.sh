@@ -1,0 +1,1 @@
+hugo server --disableFastRender --navigateToChanged -F -D

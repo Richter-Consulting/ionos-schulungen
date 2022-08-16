@@ -1,13 +1,14 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "macOS Kurs 2022 (II)"
-event: "macOS besser kennenlernen"
-event_url: "https://www.mvhs.de/programm/windows-mac-linux.19680/O483430"
-location: "MVHS Bildungszentrum"
+title: "Git Kurs 2023 (I)"
+alias: "git-kurs-2023-1"
+event: "Git - Versionsverwaltung für Dokumente, Dokumentationen, Code und mehr"
+event_url: "https://www.mvhs.de/programm/it-digitales.19596/P486680"
+location: "Online (WebEx)"
 address:
-  street: Einsteinstr. 28
-  city: München
+  street:
+  city:
   region:
   postcode:
   country:
@@ -16,22 +17,23 @@ abstract:
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2022-07-30T09:15:00+02:00
-date_end: #2022-07-31T16:00:00+02:00
-all_day: true
+date: 2023-02-01T18:00:00+01:00
+date_end: #2021-11-24T21:00:00+01:00
+all_day: false
 
 # Schedule page publish date (NOT event date).
-publishDate: 2021-11-29T08:00:00+01:00
+publishDate: 2022-08-16T08:00:11+02:00
 
 authors:
 - Eugen
 tags:
-- macOS
+- Git
 - Kurs
+- Online
 - MVHS
 
 # Is this a featured event? (true/false)
-featured: false
+featured: true
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
@@ -45,13 +47,13 @@ image:
 #   Uncomment and edit lines below to show custom links.
 links:
 - name: Anmeldung bei MVHS
-  url: https://www.mvhs.de/programm/windows-mac-linux.19680/O483430
+  url: https://www.mvhs.de/programm/it-digitales.19596/P486680
   icon_pack: fas
   icon: book-open
-# - name: Kurs Unterlagen
-#   url: /course/git
-#   icon_pack: fas
-#   icon: book
+- name: Kurs Unterlagen
+  url: /course/git
+  icon_pack: fas
+  icon: book
 
 # Optional filename of your slides within your event's folder or a URL.
 url_slides:
@@ -65,7 +67,7 @@ url_video:
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-#slides: "git"
+slides: "git"
 
 # Projects (optional).
 #   Associate this post with one or more of your projects.
@@ -74,10 +76,15 @@ url_video:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
-Sie haben bereits Erfahrungen im Umgang mit Ihrem Mac und entdecken hier weitere Anwendungs- und Wartungsprogramme. Auch lernen Sie tiefergehende Konfigurationsmöglichkeiten des Systems kennen: Hardwarekomponenten und -erweiterungen; Systemeinstellungen, -optimierung und -sicherung; Tipps und Tricks im Umgang mit dem Finder; Einrichten von Internet und Netzwerk; Nutzen der Cloud-Dienste.
+Arbeiten Sie in einer Gruppe an einem Dokument oder programmieren Sie gerne? Wollen Sie wissen, was Sie oder Andere zuletzt am Dokument geändert haben?
+
+Lernen Sie, wie eine Version (von einem oder mehreren Dokumenten) mit Git auf dem Rechner gesichert, verglichen, mit anderen geteilt, zusammengeführt und wiederhergestellt werden kann. Erstellen Sie mehrere Bearbeitungszweige, um an mehreren Dokumentversionen parallel arbeiten zu können.
+
+Kursinhalt: Grundlagen Versionierung; Geschichte; aktuelle Systeme; Strategien; lokaler Einsatz von Git; Git mit Server-Einsatz; Arbeiten an mehreren Zweigen.
 
 ## Nächster Termin an der MVHS
 
-- 2x, 30.07.2022 - 31.07.2022
-  1. Sa. 30.07.2022 , 09:15 – 16:00 Uhr
-  2. So. 31.07.2022 , 09:15 – 16:00 Uhr
+- 3x, 01.02.2023 - 15.02.2023
+  1. Mi. 01.02.2023 , 18:00 – 20:00 Uhr
+  2. Mi. 08.02.2023 , 18:00 – 20:00 Uhr
+  3. Mi. 15.02.2023 , 18:00 – 20:00 Uhr

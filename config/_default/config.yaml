@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: WebDucer Kurse # Website name
-baseURL: 'https://kurse.richter.consulting/' # Website URL
+baseURL: "https://kurse.richter.consulting/" # Website URL
 
 ############################
 ## LANGUAGE
@@ -22,6 +22,7 @@ removePathAccents: true
 module:
   imports:
     - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-netlify
+    - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-reveal
     - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5
 
 ############################
@@ -36,10 +37,10 @@ enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
 permalinks:
-  event: '/termine/:slug/'
-  tags: '/tag/:slug/'
-  categories: '/kategorien/:slug/'
-  publication_types: '/veroeffentlichungen/:slug/'
+  event: "/termine/:slug/"
+  tags: "/tag/:slug/"
+  categories: "/kategorien/:slug/"
+  publication_types: "/veroeffentlichungen/:slug/"
 disableAliases: true
 outputs:
   home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]

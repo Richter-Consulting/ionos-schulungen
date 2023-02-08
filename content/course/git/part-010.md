@@ -12,6 +12,7 @@ weight: 110
 ## Allgemein
 
 - [Git (Offizierlle Seite) / Download](https://git-scm.com/)
+- [Standard für gut lesbare Commits - Conventional Commits](https://www.conventionalcommits.org/de/v1.0.0/)
 
 ## Bücher
 

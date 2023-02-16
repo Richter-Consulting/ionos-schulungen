@@ -1,10 +1,10 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Git Kurs 2023 (I)"
-alias: "git-kurs-2023-1"
+title: "Git Kurs 2023 (II)"
+alias: "git-kurs-2023-2"
 event: "Git - Versionsverwaltung für Dokumente, Dokumentationen, Code und mehr"
-event_url: "https://www.mvhs.de/programm/it-digitales.19596/P486680"
+event_url: "https://www.mvhs.de/kurse/online-programm/it-digitales/git-versionsverwaltung-fuer-dokumente-dokumentationen-code-und-mehr/online-kurs-460-C-Q486680"
 location: "Online (WebEx)"
 address:
   street:
@@ -17,12 +17,12 @@ abstract:
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2023-02-01T18:00:00+01:00
+date: 2023-07-05T18:00:00+01:00
 date_end: #2021-11-24T21:00:00+01:00
 all_day: false
 
 # Schedule page publish date (NOT event date).
-publishDate: 2022-08-16T08:00:11+02:00
+publishDate: 2023-02-16T08:00:11+02:00
 
 authors:
 - Eugen
@@ -33,7 +33,7 @@ tags:
 - MVHS
 
 # Is this a featured event? (true/false)
-featured: false
+featured: true
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
@@ -47,7 +47,7 @@ image:
 #   Uncomment and edit lines below to show custom links.
 links:
 - name: Anmeldung bei MVHS
-  url: https://www.mvhs.de/programm/it-digitales.19596/P486680
+  url: https://www.mvhs.de/kurse/online-programm/it-digitales/git-versionsverwaltung-fuer-dokumente-dokumentationen-code-und-mehr/online-kurs-460-C-Q486680
   icon_pack: fas
   icon: book-open
 - name: Kurs Unterlagen
@@ -84,7 +84,7 @@ Kursinhalt: Grundlagen Versionierung; Geschichte; aktuelle Systeme; Strategien; 
 
 ## Nächster Termin an der MVHS
 
-- 3x, 01.02.2023 - 15.02.2023
-  1. Mi. 01.02.2023 , 18:00 – 20:00 Uhr
-  2. Mi. 08.02.2023 , 18:00 – 20:00 Uhr
-  3. Mi. 15.02.2023 , 18:00 – 20:00 Uhr
+- 3x, 05.07.2023 - 19.07.2023
+  1. Mi. 05.07.2023 , 18:00 – 20:00 Uhr
+  2. Mi. 12.07.2023 , 18:00 – 20:00 Uhr
+  3. Mi. 19.07.2023 , 18:00 – 20:00 Uhr

@@ -3,7 +3,7 @@
 
 title: "macOS Kurs 2023 (I)"
 event: "macOS besser kennenlernen"
-event_url: "https://www.mvhs.de/programm/hardware.19682/P483430"
+event_url: "https://www.mvhs.de/kurse/it-digitales/betriebssysteme-hardware/hardware/macos-das-apple-betriebssystem-besser-kennenlernen-460-C-Q483430"
 location: "MVHS Bildungszentrum"
 address:
   street: Einsteinstr. 28
@@ -16,12 +16,12 @@ abstract:
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2023-02-04T09:15:00+02:00
+date: 2023-06-03T09:15:00+02:00
 date_end: #2022-07-31T16:00:00+02:00
 all_day: true
 
 # Schedule page publish date (NOT event date).
-publishDate: 2022-08-16T08:00:00+01:00
+publishDate: 2023-02-16T08:00:00+01:00
 
 authors:
 - Eugen
@@ -31,7 +31,7 @@ tags:
 - MVHS
 
 # Is this a featured event? (true/false)
-featured: false
+featured: true
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
@@ -45,7 +45,7 @@ image:
 #   Uncomment and edit lines below to show custom links.
 links:
 - name: Anmeldung bei MVHS
-  url: https://www.mvhs.de/programm/hardware.19682/P483430
+  url: https://www.mvhs.de/kurse/it-digitales/betriebssysteme-hardware/hardware/macos-das-apple-betriebssystem-besser-kennenlernen-460-C-Q483430
   icon_pack: fas
   icon: book-open
 # - name: Kurs Unterlagen
@@ -78,6 +78,6 @@ Sie haben bereits Erfahrungen im Umgang mit Ihrem Mac und entdecken hier weitere
 
 ## Nächster Termin an der MVHS
 
-- 2x, 04.02.2023 - 05.02.2023
-  1. Sa. 04.02.2023 , 09:15 – 16:00 Uhr
-  2. So. 05.02.2023 , 09:15 – 16:00 Uhr
+- 2x, 03.06.2023 - 04.06.2023
+  1. Sa. 03.06.2023 , 09:15 – 16:00 Uhr
+  2. So. 04.06.2023 , 09:15 – 16:00 Uhr

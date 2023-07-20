@@ -1,8 +1,8 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Git Kurs 2023 (II)"
-alias: "git-kurs-2023-2"
+title: "Git Kurs 2024 (I)"
+alias: "git-kurs-2024-1"
 event: "Git - Versionsverwaltung für Dokumente, Dokumentationen, Code und mehr"
 event_url: "https://www.mvhs.de/kurse/online-programm/it-digitales/git-versionsverwaltung-fuer-dokumente-dokumentationen-code-und-mehr/online-kurs-460-C-R486650"
 location: "Online (WebEx)"

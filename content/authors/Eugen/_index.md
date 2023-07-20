@@ -80,7 +80,7 @@ social:
     header: true
 - icon: book
   icon_pack: fas
-  link: https://app.pluralsight.com/profile/WebDucerER
+  link: https://app.pluralsight.com/profile/WebDucer
   label: "Lernen bei Pluralsight"
   display:
     header: true

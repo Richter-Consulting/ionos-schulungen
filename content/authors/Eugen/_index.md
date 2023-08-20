@@ -50,19 +50,18 @@ social:
   label: "MVHS Dozent"
   display:
     header: true
-- icon: twitter
 - icon: github
   icon_pack: fab
   link: https://github.com/WebDucer
   label: "Meine Arbeit bei github"
   display:
     header: true
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/WebDucer
-  label: "Mir auf Twitter folgen"
-  display:
-    header: true
+# - icon: twitter
+#   icon_pack: fab
+#   link: https://twitter.com/WebDucer
+#   label: "Mir auf Twitter folgen"
+#   display:
+#     header: true
 #- icon: stackoverflow
 #  icon_pack: ai
 #  link: http://stackoverflow.com/users/1271756/webducer

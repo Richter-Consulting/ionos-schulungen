@@ -62,33 +62,6 @@ Die Daten werden gelöscht, sobald diese für den Zweck der Erhebung nicht mehr 
 
 Die Bereitstellung der vorgenannten personenbezogenen Daten ist weder gesetzlich noch vertraglich vorgeschrieben. Ohne die IP-Adresse ist jedoch der Dienst und die Funktionsfähigkeit unserer Website nicht gewährleistet. Zudem können einzelne Dienste und Services nicht verfügbar oder eingeschränkt sein. Aus diesem Grund ist ein Widerspruch ausgeschlossen.
 
-## Verwendung von Matomo
-
-Soweit Sie ihre Einwilligung gegeben haben, wird auf dieser Website Matomo (vormals Piwik) eingesetzt, eine Open-Source-Software zur statistischen Auswertung von Besucherzugriffen. Anbieter der Software Matomo ist die InnoCraft Ltd., 150 Willis St, 6011 Wellington, Neuseeland.
-
-Matomo setzt einen Cookie (eine Textdatei) auf Ihrem Endgerät, mit dem Ihr Browser wiedererkannt werden kann. Werden Unterseiten unserer Website aufgerufen, werden folgende Informationen gespeichert:
-
-- die IP-Adresse des Nutzers, gekürzt um die letzten zwei Bytes (anonymisiert)
-- die aufgerufene Unterseite und Zeitpunkt des Aufrufs
-- die Seite, von der der Nutzer auf unsere Webseite gelangt ist (Referrer)
-- welcher Browser mit welchen Plugins, welches Betriebssystem und welche Bildschirmauflösung genutzt wird<
-- die Verweildauer auf der Website
-- die Seiten, die von der aufgerufenen Unterseite aus angesteuert werden
-
-Die Verwendung von Matomo erfolgt zu dem Zweck, die Qualität unserer Website und ihre Inhalte zu verbessern. Dadurch erfahren wir, wie die Website genutzt wird und können so unser Angebot stetig optimieren.
-
-Durch die Anonymisierung der IP-Adresse um sechs Stellen tragen wir dem Interesse des Webseitenbesuchers am Schutz personenbezogener Daten Rechnung. Die Daten werden nicht dazu genutzt, den Nutzer der Website persönlich zu identifizieren und werden nicht mit anderen Daten zusammengeführt. Die durch das Cookie erzeugten Informationen über Ihre Benutzung dieser Webseite werden nicht an Dritte weitergegeben.
-
-### Widerruf der Einwilligung:
-
-Sie können Ihre Einwilligung zur Speicherung und Auswertung Ihrer Daten durch Matomo jederzeit über den unten aufgeführten Link widerrufen. Es wird dann ein sogenanntes Opt-Out-Cookie auf Ihrem Gerät gespeichert, das zwei Jahre Gültigkeit hat. Es hat zur Folge, dass Matomo keinerlei Sitzungsdaten erhebt. Beachten Sie allerdings, dass das Opt-Out-Cookie gelöscht wird, wenn Sie alle Cookies löschen.
-
-{{< matomo_optout >}}
-
-Nähere Informationen zu den Privatsphäre-Einstellungen der Matomo Software finden Sie unter folgendem Link: [matomo.org/docs/privacy](https://matomo.org/docs/privacy/).
-
-Sie können die Verwendung von Cookies auch durch eine entsprechende Einstellung Ihrer Browser Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können.
-
 ## Kommentarfunktion mit Disqus
 
 Wir nutzen das DISQUS-Kommentarsystem, das von der Firma DISQUS Inc., 301 Howard St., Suite 300, San Francisco, CA 94105, USA, bereitgestellt wird. Die Datenschutzinformationen von DISQUS finden Sie unter [help.disqus.com/en/collections/191787-terms-and-policies](https://help.disqus.com/en/collections/191787-terms-and-policies). DISQUS erlaubt die Anmeldung entweder über ein eigenes DISQUS-Nutzer-Konto oder über bestehende Nutzer-Konten bei Facebook, Twitter und Google. Sofern Sie sich mit Ihren Accounts der Social-Media-Angebote bei der DISQUS-Funktion auf unseren Webseiten anmelden, werden auch diese Diensteanbieter Informationen zu Ihrer Nutzung der DISQUS-Funktionen erheben und verarbeiten. Weitere Informationen hierzu finden Sie in den Datenschutzinformationen der jeweiligen Anbieter.

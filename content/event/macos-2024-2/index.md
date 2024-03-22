@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "macOS Kurs 2024 (I)"
+title: "macOS Kurs 2024 (II)"
 event: "macOS besser kennenlernen"
 event_url: "https://www.mvhs.de/kurse/it-digitales/betriebssysteme-hardware/hardware/macos-das-apple-betriebssystem-besser-kennenlernen-460-C-S483430"
 location: "MVHS Bildungszentrum"

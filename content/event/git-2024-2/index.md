@@ -1,10 +1,10 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Git Kurs 2024 (I)"
-alias: "git-kurs-2024-1"
+title: "Git Kurs 2024 (II)"
+alias: "git-kurs-2024-2"
 event: "Git - Versionsverwaltung für Dokumente, Dokumentationen, Code und mehr"
-event_url: "https://www.mvhs.de/kurse/online-programm/it-digitales/git-versionsverwaltung-fuer-dokumente-dokumentationen-code-und-mehr/online-kurs-460-C-R486650"
+event_url: "https://www.mvhs.de/kurse/online-programm/it-digitales/git-versionsverwaltung-fuer-dokumente-dokumentationen-code-und-mehr/online-kurs-460-C-S486650"
 location: "Online (WebEx)"
 address:
   street:
@@ -17,12 +17,12 @@ abstract:
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2024-01-17T18:00:00+01:00
+date: 2024-04-25T18:00:00+01:00
 date_end: #2021-11-24T21:00:00+01:00
 all_day: false
 
 # Schedule page publish date (NOT event date).
-publishDate: 2023-07-10T08:00:11+02:00
+publishDate: 2024-03-22T08:00:11+02:00
 
 authors:
 - Eugen
@@ -33,7 +33,7 @@ tags:
 - MVHS
 
 # Is this a featured event? (true/false)
-featured: false
+featured: true
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
@@ -47,7 +47,7 @@ image:
 #   Uncomment and edit lines below to show custom links.
 links:
 - name: Anmeldung bei MVHS
-  url: https://www.mvhs.de/kurse/online-programm/it-digitales/git-versionsverwaltung-fuer-dokumente-dokumentationen-code-und-mehr/online-kurs-460-C-R486650
+  url: https://www.mvhs.de/kurse/online-programm/it-digitales/git-versionsverwaltung-fuer-dokumente-dokumentationen-code-und-mehr/online-kurs-460-C-S486650
   icon_pack: fas
   icon: book-open
 - name: Kurs Unterlagen
@@ -84,7 +84,7 @@ Kursinhalt: Grundlagen Versionierung; Geschichte; aktuelle Systeme; Strategien; 
 
 ## Nächster Termin an der MVHS
 
-- 3x, 17.01.2024 - 31.01.2024
-  1. Mi. 17.01.2024 , 18:00 – 20:00 Uhr
-  2. Mi. 24.01.2024 , 18:00 – 20:00 Uhr
-  3. Mi. 31.01.2024 , 18:00 – 20:00 Uhr
+- 3x, 25.04.2024 - 16.05.2024
+  1. Do. 25.04.2024 , 18:00 – 20:00 Uhr
+  2. Do. 02.05.2024 , 18:00 – 20:00 Uhr
+  3. Do. 16.05.2024 , 18:00 – 20:00 Uhr
